@@ -9,10 +9,12 @@ pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float
 pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
 pipe = pipe.to("cuda")
 
+
+
 prompt = (
     "a beautiful girl with flowers in her hair, wearing a white dress, "
-    "standing in a sunny flower field, ultra realistic, high detail, "
-    "soft lighting, 8k, cinematic, sharp focus"
+    "
+    "
 )
 
 negative_prompt = (
